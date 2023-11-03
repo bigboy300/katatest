@@ -1,0 +1,67 @@
+a {
+  text-decoration: none;
+}
+p {
+  font-family: 'Barlow', sans-serif;
+}
+body {
+  background-color: #eff6ff;
+}
+.container {
+  background-color: #ffffff;
+  display: flex;
+  margin: 90px;
+}
+
+.right {
+  margin: 0 auto;
+}
+.logo-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  /* Дополнительные стили кнопки */
+}
+
+.logo {
+  margin-right: 10px;
+  /* Дополнительные стили логотипа */
+}
+
+.linkedin {
+  color: #fff;
+  background-color: #0076b6;
+}
+
+.or {
+  display: flex;
+  justify-content: space-between;
+}
+span + span {
+  margin-left: 40px;
+}
+.form1 {
+  display: flex;
+  justify-content: space-around;
+}
+.line-with-text {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.line {
+  border-bottom: 1px groove #7b8a92;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 0 10px;
+}
