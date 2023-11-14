@@ -1,67 +1,225 @@
-a {
-  text-decoration: none;
-}
-p {
-  font-family: 'Barlow', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
+  font-family: 'Barlow', sans-serif;
+
   background-color: #eff6ff;
+  color: #2a4a5c;
 }
 .container {
   background-color: #ffffff;
   display: flex;
-  margin: 90px;
+  margin: 60px;
 }
-
+.image-container {
+  display: block;
+  position: relative;
+}
+.logo-overlay {
+  position: absolute;
+  top: 20px;
+  left: 43px;
+  z-index: 1;
+  height: 60px;
+  width: 128px;
+}
 .right {
   margin: 0 auto;
 }
-.logo-button {
+h2 {
+  margin-bottom: 7px;
+  margin-top: 62px;
+  font-weight: 400;
+}
+.text {
+  margin-bottom: 50px;
+}
+.buttons {
+  gap: 40px;
+  display: flex;
+  margin-bottom: 55px;
+}
+.logo-button1 {
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: #255a9b;
   border: none;
-  padding: 0;
+  padding-right: 70px;
   cursor: pointer;
+
   /* Дополнительные стили кнопки */
 }
-
-.logo {
-  margin-right: 10px;
-  /* Дополнительные стили логотипа */
+.logo-button1:hover {
+  background-color: #487ab7;
+  transition: background-color 0.5s;
 }
 
-.linkedin {
+.logo1 {
+  margin: 8px 12px;
+  width: 22px;
+  height: 25px;
+}
+
+.facebook_text {
+  color: white;
+}
+.logo-button2 {
+  gap: 16px;
+  display: flex;
   color: #fff;
   background-color: #0076b6;
+  align-items: center;
+  border: none;
+  padding-right: 47px;
+  cursor: pointer;
+}
+.logo-button2:hover {
+  background-color: #487ab7;
+  transition: background-color 0.5s;
 }
 
-.or {
-  display: flex;
-  justify-content: space-between;
+.logo2 {
+  width: 55px;
+  height: 25px;
 }
-span + span {
-  margin-left: 40px;
-}
-.form1 {
+
+.line-container {
+  position: relative;
   display: flex;
+  justify-content: center;
+}
+.line-word {
+  font-size: 10px;
+}
+.line-container::before,
+.line-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background-color: black;
+}
+
+.line-container::before {
+  right: 53%;
+  width: 20%;
+  opacity: 0.1;
+}
+
+.line-container::after {
+  left: 53%;
+  width: 20%;
+  opacity: 0.1;
+}
+
+.row {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.forms {
+  gap: 28px;
+  margin-top: 42px;
+  display: flex;
+  margin-bottom: 42x;
   justify-content: space-around;
 }
-.line-with-text {
+.form-field {
+  padding: 5px;
+  border: 1px solid #ccc;
+  color: black;
+  height: 55px;
+  width: 258px;
+}
+.mail {
+  border-left-color: #3698fb;
+}
+.form-field:focus {
+  color: #000;
+}
+.form-field span:first-child {
+  color: #999;
+}
+.radio {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.select {
+  margin-bottom: 37px;
+}
+/* container */
+label {
+  display: block;
+  margin-bottom: 4px;
   position: relative;
-  text-align: center;
-  margin-top: 40px;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
-.line {
-  border-bottom: 1px groove #7b8a92;
-}
-
-.text {
+label input[type='radio'] {
   position: absolute;
+
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+label span {
+  position: absolute;
+  border: 1px solid #c1c1c1;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: 0.3s background-color;
+}
+
+label span:after {
+  content: '';
+  position: absolute;
+  display: none;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 0 10px;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+label:hover span {
+  background-color: #ccc;
+}
+
+label input:checked ~ span {
+  background-color: #2eaadc;
+}
+label input:checked ~ span:after {
+  display: block;
+}
+
+.description {
+  background-color: #ffffff;
+  width: 260px;
+  box-shadow: 0px 0px 20px 1px #afafaf;
+  color: #7b8a92;
+  margin-bottom: 45px;
+}
+.crtAcc {
+  background-color: #3698fb;
+  color: #fff;
+  padding: 13px 56px;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 6px;
+}
+.agree {
+  margin-bottom: 60px;
 }

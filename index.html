@@ -14,32 +14,85 @@
   </head>
   <body>
     <div class="container">
-      <div class="image">
-        <img src="/img/bg1.jpg" alt="bg" />
+      <div class="image-container">
+        <img src="/img/bg.jpg" alt="bg" />
+        <img class="logo-overlay" src="/img/logo.svg" alt="logo" />
       </div>
       <div class="right">
-        <p>Get iintoo it today</p>
-        <p>There is no charge or obligation upon registration</p>
+        <h2>Get iintoo it today</h2>
+        <p class="text">There is no charge or obligation upon registration</p>
         <div class="buttons">
-          <button class="logo-button">
-            <div class="logo">
+          <button class="logo-button1">
+            <div class="logo1">
               <img src="/img/facebook.svg" alt="Логотип" />
             </div>
-            <div class="facebook_text">Facebook</div>
+            <div class="facebook_text">Register with Facebook</div>
           </button>
 
-          <a href="" class="linkedin">Register with Linkedin</a>
+          <button class="logo-button2">
+            <div class="logo2">
+              <img class="logo2" src="/img/linkedin.svg" alt="Логотип" />
+            </div>
+            <div class="linkedin_text">Register with Linkedin</div>
+          </button>
         </div>
-        <div class="line-with-text">
-          <div class="line"></div>
-          <span class="text">OR</span>
-        </div>
-        <!-- <form class="form1">
-          <input type="text" id="fname" name="fname" /><br />
 
-          <input type="text" id="lname" name="lname" />
-        </form> -->
+        <div class="line-container">
+          <span class="line-word">OR</span>
+        </div>
+
+        <div class="forms">
+          <div class="form">
+            <div class="form-field mail">
+              <span>Email</span></br>
+              <span>gus.goodwin@gmail.com</span>
+            </div>
+          </div>
+          <div class="form">
+            <div class="form-field phone">
+              <span>Phone</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>What type of investor are you?</h2>
+        <p class="select">Select the type of investor you are below.</p>
+        <div class="radio">
+          <label
+            >Individual 🛈
+            <input type="radio" name="fruit" checked />
+            <span></span>
+          </label>
+          <label
+            >Business 🛈
+            <input type="radio" name="fruit" />
+            <span></span>
+          </label>
+          <label
+            >IRA 🛈
+            <input type="radio" name="fruit" />
+            <span></span>
+          </label>
+          <label
+            >Trust 🛈
+            <input type="radio" name="fruit" />
+            <span></span>
+          </label>
+        </div>
+        <div class="description">
+          I am natural person investing on my own behalf as a sole owner, joint
+          tenant, or tenant in common.
+        </div>
+        <form class="agree">
+         
+            <input type="checkbox" name="languages" value="HTML" />
+            I agree to the terms and receiving notifications from iinto
+            <a href="#">View full terms</a>
+          
+        </form>
+        <button class="crtAcc">Create Account</button>
       </div>
     </div>
   </body>
+  <link rel="stylesheet" href="/index.js" />
 </html>
